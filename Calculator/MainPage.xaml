@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text="Calculator"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Border BackgroundColor="CadetBlue" Stroke="Black" StrokeThickness="1" Padding="5">
+
+                <Grid RowSpacing="2" ColumnSpacing="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView
+                        Grid.Row="0"
+                        Grid.ColumnSpan="4"
+                        BindingContext="0"/>
+                    
+                    <Button
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="AC"
+                        TextColor="Black"
+                        BackgroundColor="White"/>
+                    <Button
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Text="+/-"
+                        TextColor="Black"
+                        BackgroundColor="White"/>
+                    <Button
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Text="%"
+                        TextColor="Black"
+                        BackgroundColor="White"/>
+                    <Button
+                        Grid.Row="1"
+                        Grid.Column="3"
+                        Text="/"
+                        TextColor="Black"
+                        BackgroundColor="Orange"/>
+
+                    <Button
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        Text="7"
+                        TextColor="White"
+                        BackgroundColor="BlueViolet"/>
+                    <Button
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Text="8"
+                        TextColor="White"
+                        BackgroundColor="BlueViolet"/>
+                    <Button
+                        Grid.Row="2"
+                        Grid.Column="2"
+                        Text="9"
+                        TextColor="White"
+                        BackgroundColor="BlueViolet"/>
+                    <Button
+                        Grid.Row="2"
+                        Grid.Column="3"
+                        Text="x"
+                        TextColor="Black"
+                        BackgroundColor="Orange"/>
+
+                    <Button
+                        Grid.Row="3"
+                        Grid.Column="0"
+                        Text="4"
+                        TextColor="White"
+                        BackgroundColor="BlueViolet"/>
+                    <Button
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        Text="5"
+                        TextColor="White"
+                        BackgroundColor="BlueViolet"/>
+                    <Button
+                        Grid.Row="3"
+                        Grid.Column="2"
+                        Text="6"
+                        TextColor="White"
+                        BackgroundColor="BlueViolet"/>
+                    <Button
+                        Grid.Row="3"
+                        Grid.Column="3"
+                        Text="-"
+                        TextColor="Black"
+                        BackgroundColor="Orange"/>
+
+                    <Button
+                         Grid.Row="4"
+                         Grid.Column="0"
+                         Text="1"
+                         TextColor="White"
+                         BackgroundColor="BlueViolet"/>
+                    <Button
+                         Grid.Row="4"
+                         Grid.Column="1"
+                         Text="2"
+                         TextColor="White"
+                         BackgroundColor="BlueViolet"/> 
+                    <Button
+                         Grid.Row="4"
+                         Grid.Column="2"
+                         Text="3"
+                         TextColor="White"
+                         BackgroundColor="BlueViolet"/>
+                    <Button
+                         Grid.Row="4"
+                         Grid.Column="3"
+                         Text="÷"
+                         TextColor="Black"
+                         BackgroundColor="Orange"/>
+
+                    <Button
+                         Grid.Row="5"
+                         Grid.Column="0"
+                         Grid.ColumnSpan="2"
+                         Text="0"
+                         TextColor="White"
+                         BackgroundColor="BlueViolet"/>
+                    <Button
+                         Grid.Row="5"
+                         Grid.Column="2"
+                         Text="."
+                         TextColor="White"
+                         BackgroundColor="BlueViolet"/>
+                    <Button
+                         Grid.Row="5"
+                         Grid.Column="2"
+                         Text="="
+                         TextColor="White"
+                         BackgroundColor="BlueViolet"/>
+                </Grid>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
