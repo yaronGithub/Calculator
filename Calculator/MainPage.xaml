@@ -32,11 +32,13 @@
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <BoxView
-                        Grid.Row="0"
-                        Grid.ColumnSpan="4"
-                        BindingContext="0"/>
+                    <Border Grid.ColumnSpan="4">
+                        <Entry
+                            Grid.Row="0"
+                            Grid.ColumnSpan="4"/>
+                    </Border>
                     
+
                     <Button
                         Grid.Row="1"
                         Grid.Column="0"
@@ -155,7 +157,7 @@
                          Grid.Column="2"
                          Text="="
                          TextColor="White"
-                         BackgroundColor="BlueViolet"/>
+                         BackgroundColor="Orange"/>
                 </Grid>
             </Border>
 
